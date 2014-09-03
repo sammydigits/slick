@@ -895,7 +895,7 @@
         function loadImages(imagesScope) {
             $('img[data-lazy]', imagesScope).each(function() {
                 var image = $(this),
-                    imageSource = $(this).attr('data-lazy') + "?" + new Date().getTime();
+                    imageSource = $(this).attr('data-lazy');
 
                 image
                   .load(function() { image.animate({ opacity: 1 }, 200); })
